@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="80dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:background="@drawable/short_back"
+            android:clickable="true"
+            android:id="@+id/depart"
+            >
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:id="@+id/img_dep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher_round"
+
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_below="@+id/img_dep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Academic"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:background="#00747171"
+
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/short_back"
+            android:clickable="true"
+            android:id="@+id/products"
+            >
+            <ImageView
+                android:layout_marginTop="25dp"
+                android:id="@+id/img_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher_round"
+                android:layout_centerHorizontal="true"
+                />
+            <Button
+                android:layout_below="@+id/img_product"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CV"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:background="#00747171"
+                android:layout_gravity="center"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

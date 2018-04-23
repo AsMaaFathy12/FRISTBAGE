@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <ImageView
+        android:id="@+id/header_cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="#519438" />
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/header_cover_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/logoproject"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logoproject" />
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_cover_image"
+        android:background="#d5e2d0"
+        android:elevation="4dp"
+        android:paddingBottom="24dp">
+
+    <TextView
+        android:id="@+id/user_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Player Name"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:elevation="4dp"
+                android:padding="20dp"
+                android:text="Show information About Player " />
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recAcadmy"
+                android:background="@color/colorAccent">
+
+            </android.support.v7.widget.RecyclerView>
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:src="@mipmap/addvedio"
+
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

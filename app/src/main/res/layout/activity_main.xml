@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@color/colorPrimary"
+    android:layout_gravity="center"
+    tools:context="com.example.ascom.fristbage.Activites.MainActivity"
+android:gravity="center"
+
+    >
+
+
+    <Button
+
+        android:gravity="center"
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/newbutton"
+        android:shadowColor="@color/colorPrimary"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+
+
+        />
+    <Button
+
+        android:gravity="center"
+        android:id="@+id/not_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:background="@drawable/newbutton"
+        android:shadowColor="@color/colorPrimary"
+        android:text="Not now"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="20dp"
+
+
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/notnow"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/sign_in"-->
+        <!--android:layout_marginLeft="140dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text=" not now"-->
+        <!--android:textSize="20dp"-->
+        <!--android:background="@drawable/sty"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--/>-->
+
+</LinearLayout>

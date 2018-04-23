@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip"
+    android:background="@color/colorAccent"
+
+    tools:context="com.example.ascom.fristbage.Activites.loginActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logoproject"
+               android:layout_gravity="center"
+
+
+                />
+
+            <EditText
+                     android:layout_marginTop="10dp"
+                    android:id="@+id/email"
+                android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Email"
+                   android:textColorHint="@color/colorPrimary"
+                   android:drawableLeft="@mipmap/email"
+                   android:textSize="18sp"
+                   android:textColor="@color/colorPrimary"
+                    android:background="@drawable/short_back"
+                    android:inputType="textEmailAddress"
+
+                />
+        <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Password"
+        android:drawableLeft="@mipmap/pass"
+        android:textSize="18sp"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/short_back"
+        android:inputType="textPassword"
+
+        />
+
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:layout_marginTop="16dp"
+                android:text="Login"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/newbutton"
+
+
+                />
+
+            <TextView
+                android:id="@+id/signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="No account yet? create one !"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                />
+
+</LinearLayout>
+    </ScrollView>
+
+
+

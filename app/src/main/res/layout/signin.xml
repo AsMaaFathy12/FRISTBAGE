@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/back"
+
+    >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/pic_pofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_marginLeft="155dp"
+                android:layout_marginTop="75dp"
+
+                />
+
+
+
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic_pofile"
+                android:layout_marginTop="40dp"
+    >
+
+                <AutoCompleteTextView
+
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+</RelativeLayout>
+
+<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="6"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/signin"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/short_back"
+
+
+                />
+
+            <TextView
+                android:id="@+id/email_sign_up_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="have you account yet? create one !"
+                android:textStyle="italic"
+            android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
